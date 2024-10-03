@@ -1,0 +1,61 @@
+section.start-section
+  .wrapper
+    .start-section__container
+      img.start-section__gem-large(src="images/finances-section-gem-large.png" loading="lazy" width="290" height="290" alt="image")
+      img.start-section__gem-small(src="images/finances-section-gem-small.png" loading="lazy" width="114" height="114" alt="image")
+      h2.start-section__title.font-w-bold.font-s-40
+        | Сделайте первый шаг, узнайте 
+        span.color-pink лучшие места 
+        br.no-br
+        | для открытия 
+        span.color-pink Жужа
+      .start-section__sub-title.font-s-20
+        | Просто укажите название вашего города 
+        br
+        | и получите список удачных локаций
+      form.start-section__form(data-city-form)
+        .input.input--city.js-input-city.start-item
+          input.input.input--city.start-item.input-city-position(type="text" name="city" autocomplete="off" placeholder="Название города")
+          .input__progress.js-input-city-progress
+            span.js-input-city-percent 0%
+        button.btn.btn--secondary.start-item(type="submit") Получить список локаций
+
+section.owner-section
+  .wrapper
+    .owner-section__container
+      h2.owner-section__title.font-w-bold.font-s-40
+        | Почувствуйте себя 
+        span.color-pink владельцем Жужа
+      .owner-section__sub-title.font-s-20
+        | Запишитесь на тест-драйв франшизы и вы узнаете:
+      .swiper-owner
+        .owner-section__cards.swiper-wrapper
+          .owner-section__card.swiper-slide
+            img.owner-section__card-icon(src="images/support-section-card-icon.png" loading="lazy" width="44" height="44" alt="icon")
+            .font-s-20
+              | Как вести документооборот
+          .owner-section__card.swiper-slide.owner-card-position
+            img.owner-section__card-icon(src="images/support-section-card-icon.png" loading="lazy" width="44" height="44" alt="icon")
+            .font-s-20
+              | Как организовать пространство студии
+          .owner-section__card.swiper-slide
+            img.owner-section__card-icon(src="images/support-section-card-icon.png" loading="lazy" width="44" height="44" alt="icon")
+            .font-s-20
+              | Как расширять клиентскую базу
+          .owner-section__card.swiper-slide.owner-card-position
+            img.owner-section__card-icon(src="images/support-section-card-icon.png" loading="lazy" width="44" height="44" alt="icon")
+            .font-s-20
+              | Как всегда быть в курсе новинок рынка
+          .owner-section__card.swiper-slide
+            img.owner-section__card-icon(src="images/support-section-card-icon.png" loading="lazy" width="44" height="44" alt="icon")
+            .font-s-20
+              | Как избежать ошибок на старте
+          .owner-section__card.swiper-slide.owner-card-position
+            img.owner-section__card-icon(src="images/support-section-card-icon.png" loading="lazy" width="44" height="44" alt="icon")
+            .font-s-20
+              | Как и из чего будет формироваться ваша прибыль
+        .owner-pagination.swiper-progress-owner
+      form.owner-section__form(data-feedback-form)
+        input.input.input--city(type="text" name="name" autocomplete="off" placeholder="Имя")
+        input.input.input--city(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+        button.btn(type="submit") Записаться

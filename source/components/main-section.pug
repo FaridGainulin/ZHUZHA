@@ -1,0 +1,37 @@
+section.main-section
+  .wrapper
+    .main-section__container
+      include ../components/header.pug
+      h1.main-section__title.font-w-bold.font-s-40
+        | Поможем вам 
+        br.no-br
+        | открыть 
+        span.color-pink собственную 
+        br.no-br
+        span.color-pink школу 
+        | ногтевого сервиса
+      .main-section__sub-title.font-s-24.color-grey
+        | с минимальными инвестициями
+      .main-section__text.font-w-bold.font-s-30
+        | Начните зарабатывать, 
+        br.no-br
+        | занимаясь любимым делом
+      form.main-section__form(data-feedback-form)
+        img.main-section__form-icon(src="images/main-section-form-icon.png" loading="lazy" width="450" height="376" alt="image")
+        input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+        input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+        button.btn(type="submit") Получить
+      .swiper-main
+        .main-section__cards.swiper-wrapper
+          .main-section__card.swiper-slide
+            img.main-section__card-icon(src="images/main-section-card-icon-1.svg" loading="lazy" width="52" height="52" alt="icon")
+            .font-w-italic.font-s-16 Большая <br> маржинальность
+          .main-section__card.swiper-slide
+            img.main-section__card-icon(src="images/main-section-card-icon-2.svg" loading="lazy" width="52" height="52" alt="icon")
+            .font-w-italic.font-s-16 Минимальные <br> вложения
+          .main-section__card.swiper-slide
+            img.main-section__card-icon(src="images/main-section-card-icon-3.svg" loading="lazy" width="52" height="52" alt="icon")
+            .font-w-italic.font-s-16 Стабильная <br> прибыль
+        .main-pagination.swiper-progress-main
+      img.main-section__img(src="images/main-section-img.png" loading="lazy" width="1942" height="1978" alt="image")
+      img.main-section__img-pearl(src="images/main-section-img-pearl.png" loading="lazy" width="80" height="80" alt="image")
